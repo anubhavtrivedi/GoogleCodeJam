@@ -1,0 +1,44 @@
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+    public class Solution {
+    
+    public static void main(String[] args){
+        Scanner in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+        int n=in.nextInt();
+        in.nextLine();
+        String amount;
+        
+        String first,second;
+        for(int i=0;i<n;){
+           amount =in.nextLine();
+           first="";
+           second="";
+           for(int j=0;j<amount.length();j++){
+               if(amount.charAt(j)=='4'){
+                   first=first+"3";
+                   second=second+"1";
+               }
+               else{
+                   first=first+amount.charAt(j);
+                   second=second+"0";
+               }
+               
+           }
+           int top=0;
+           for(int j=0;j<second.length();j++){
+               if(second.charAt(j)!='0')
+               break;
+               top++;
+           }
+           second=second.substring(top,second.length());
+           i++;
+         
+           System.out.println("Case #"+i+": "+first+" "+second);
+           
+
+        }
+    }
+    
+}
