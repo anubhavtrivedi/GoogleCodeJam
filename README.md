@@ -1,2 +1,2 @@
-# GoogleCodeJam2018
-solution to all the problems of codejam2018
+# GoogleCodeJam
+solution to all the problems of codejam2019 and some 2018
